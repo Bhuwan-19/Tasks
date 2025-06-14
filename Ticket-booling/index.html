@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ticket Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>Welcome to Show</header>
+
+  <div class="container">
+    <!-- ABOUT PAGE -->
+    <section id="about" class="active">
+      <h2>About Conference</h2>
+      <p>This show highlights the latest in entertainment with renowned speakers and special performances.</p>
+      <p>Meet our chief guest, industry leaders, and be a part of something amazing.</p>
+      <div class="navigation">
+        <button class="btn" onclick="nextPage()">Next</button>
+      </div>
+    </section>
+
+    <!-- BOOKING PAGE -->
+    <section id="booking">
+      <h2>Show Booking</h2>
+      <div class="seats" id="seatGrid"></div>
+      <div class="stats">
+        Total Seats: <span id="totalSeats">50</span><br/>
+        Booked Seats: <span id="bookedSeats">0</span><br/>
+        Remaining Seats: <span id="remainingSeats">50</span>
+      </div>
+      <div class="navigation">
+        <button class="btn" onclick="prevPage()">Previous</button>
+        <button class="btn" onclick="goToPayment()">Book</button>
+      </div>
+    </section>
+
+    <!-- PAYMENT PAGE -->
+    <section id="payment">
+      <h2>Payment</h2>
+      <div class="form-group">
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile" placeholder="Enter your mobile number">
+      </div>
+      <div class="navigation">
+        <button class="btn" onclick="prevPage()">Previous</button>
+        <button class="btn" onclick="makePayment()">Pay</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
