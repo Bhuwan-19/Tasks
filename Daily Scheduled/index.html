@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Daily Schedule</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>📝Daily Schedule</h1>
+        <p id="currentDate"></p>
+
+        <button onclick="addTimeSlot()">➕ Add Time Slot</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="scheduleBody"></tbody>
+        </table>
+
+        <a href="activity.html" class="btn">Go to Activity Page</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
